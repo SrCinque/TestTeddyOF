@@ -1,0 +1,14 @@
+{
+  "name": "testteddyof",
+  "version": "1.0.0",
+  "description": "Diretório para teste técnico da empresa teddy open finance",
+  "main": "src/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Filipe Amaro Cinque Santana",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.0"
+  }
+}
