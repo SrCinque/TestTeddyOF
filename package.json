@@ -4,14 +4,18 @@
   "description": "Diretório para teste técnico da empresa teddy open finance",
   "main": "src/app.js",
   "scripts": {
+    "dev": "nodemon src/app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Filipe Amaro Cinque Santana",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.21.0"
+    "@prisma/client": "^5.19.1",
+    "express": "^4.21.0",
+    "nodemon": "^3.1.4",
+    "prisma": "^5.19.1",
+    "sqlite": "^3.0.6",
+    "sqlite3": "^5.1.7"
   },
-  "devDependencies": {
-    "nodemon": "^3.1.4"
-  }
+  "type": "module"
 }
