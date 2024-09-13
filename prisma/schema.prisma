@@ -23,11 +23,13 @@ model User {
 
 model Link {
   id        String   @id @default(uuid())
-  user_id   String
+  user_id   String   @default("null")
   link_orig String
   url       String
+  views Int
+  createdAt DateTime @default(now())
   updtaedAt DateTime @updatedAt
-  deletedAt DateTime
+  deletedAt String @default("null") 
 
   @@map("links")
 
