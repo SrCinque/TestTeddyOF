@@ -3,6 +3,8 @@ import { encurtarService } from "../services/encurtarService.js";
 
 class encurtarController{
 
+    //ADICIONAR VERIFICAÇÃO SE O LINK JÁ EXISTE BASEADO NO ID DO USUÁRIO
+
     async run(req,res){
 
         const {linkOrign} = req.body

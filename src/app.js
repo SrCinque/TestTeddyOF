@@ -1,6 +1,9 @@
 import express from 'express';
 import { loginControler } from './controllers/loginController.js';
 import { encurtarController } from './controllers/encurtarController.js';
+import { urlController } from './controllers/urlController.js';
+import { uploadController } from './controllers/uploadController.js';
+import { signinController } from './controllers/signinController.js';
 import { config } from 'dotenv';
 const app = express();
 
@@ -9,10 +12,21 @@ config()
 
 app.use(express.json());
 
+app.post('/patch', (req,res)=>{
+    return new uploadController().run(req,res)
+})
 
+app.get('/:code', (req,res)=>{
+    return new urlController().run(req,res);
+})
 
 app.post('/encurtar', (req,res)=>{
     return new encurtarController().run(req,res)
+})
+
+app.post('/signin', (req,res)=>{
+    console.log(req)
+    return new signinController().run(req,res)
 })
 
 app.post('/login', (req,res)=>{

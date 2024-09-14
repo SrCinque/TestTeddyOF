@@ -27,7 +27,7 @@ class encurtarService{
             data:{
                 
                 link_orig: linkOrign,
-                url: urlEcurt,
+                url: code,
                 views: 0,
                 
             }

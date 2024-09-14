@@ -1,11 +1,7 @@
 import { prismaClient } from "../database/prisma-client.js";
 
-    //MUDAR CÓDIGO PARA REALIZAR O LOGIN e RETORNAR O JWT
-
-
-class loginService{
-
-    async criaLogin(name,email,senha){
+class signinService{
+    async signin(name,email,senha){
         const user = await prismaClient.user.create({
             data:{
                 name: name,
@@ -17,8 +13,7 @@ class loginService{
 
         return user
     }
-
 }
 
 
-export {loginService}
+export {signinService}

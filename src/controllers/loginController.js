@@ -2,6 +2,8 @@ import { loginService } from "../services/loginService.js"
 
 class loginControler{
 
+    //MUDAR CÓDIGO PARA REALIZAR O LOGIN
+
     async  logar(req,res) {
 
         const {name,email, senha} = req.body
