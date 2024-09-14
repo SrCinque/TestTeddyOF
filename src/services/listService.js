@@ -9,7 +9,8 @@ class listService{
         const listLinks = await prismaClient.link.findMany({
             where:
             {
-                user_id: userId
+                user_id: userId,
+                deletedAt: "null"
             }
         })
 

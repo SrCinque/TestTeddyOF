@@ -1,11 +1,11 @@
-import { listService } from "../services/listService";
+import { listService } from "../services/listService.js";
 
 class listController{
 
     async run(req,res){
 
-        const { userId } = req.body
-
+        const  userId  = req.userID[0]
+        console.log(userId)
         const listExecute = new listService();
         const list = await listExecute.listar(userId)
 

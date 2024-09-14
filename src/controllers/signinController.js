@@ -7,7 +7,7 @@ class signinController{
         const {name,email, senha} = req.body
 
         if(email == "" || senha == ""){
-            res.status(400).send({error_code: "INVALID_TYPE", error_description:"Errro no email ou senha!"})
+            res.status(400).send({error_code: "INVALID_TYPE", error_description:"Email ou Senha invalidos!"})
         }else{
             const signinServ = new signinService();
             const signinExecute = await signinServ.signin(name,email,senha)

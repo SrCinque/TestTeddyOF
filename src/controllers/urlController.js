@@ -12,8 +12,9 @@ class urlController{
         if(urlRedirect == "NOT_FOUND"){
             res.status(404).send({err_code:"NOT_FOUND",error_desc:"URL NÃO ENCONTRADA"})
         }else{
-            //res.redirect(urlRedirect);  --LEMBRAR DE RETIRAR O COMENTÁRIO E CONFIGURAR PARA REDIRECIONAR
-            res.status(200).send({URL: urlRedirect}) //Só para confirmar
+
+            
+            res.redirect(urlRedirect);  //--LEMBRAR DE RETIRAR O COMENTÁRIO E CONFIGURAR PARA REDIRECIONAR
         }
     }
 }
