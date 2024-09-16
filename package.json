@@ -4,6 +4,7 @@
   "description": "Diretório para teste técnico da empresa teddy open finance",
   "main": "src/app.js",
   "scripts": {
+    "migrate": "npx prisma migrate dev --name init",
     "dev": "nodemon src/app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
