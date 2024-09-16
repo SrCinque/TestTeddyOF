@@ -1,33 +1,27 @@
 # Meu Projeto
 
-Um projeto que usa Docker e Prisma ORM com SQLite para armazenar dados.
+Um projeto feito para um teste técnico para a empresa BOLD. Ne construi uma API de serviço de encutar URL's, utilizando NODE.JS, EXPRES, PRISMA ORM e SQLite.
 
 ## Instalação
 
-1. Clone o repositório: `git clone https://github.com/meu-usuario/meu-projeto.git`
+1. Clone o repositório: `https://github.com/SrCinque/TestTeddyOF`
 2. Navegue até o diretório do projeto: `cd meu-projeto`
-3. Execute o comando: `docker-compose up`
+3. Execute o comando: `node install` e `npx prisma migrate dev --name init`
 
-## Uso
-
-* Acesse o aplicativo em `http://localhost:8080`
-* Use o comando `docker-compose exec app prisma migrate` para executar migrações de banco de dados
 
 ## Configuração
 
-* Edite o arquivo `docker-compose.yml` para configurar o serviço `app`
-* Edite o arquivo `prisma/schema.prisma` para configurar o modelo de dados
+* **CASO QUEIRA RODAR A APLICAÇÃO EM UMA PORTA DIFERENTE DA 3000:** Edite a variável URL no arquivo .env.
+_exemplo: URL="http://localhost:numero-da-porta/"_
 
-## Contribuição
+## Uso
+* Inicie a API com o comando: `npm run dev`
+* Acesse o aplicativo em `http://localhost:3000`
+* Use o comando `docker-compose exec app prisma migrate` para executar migrações de banco de dados
 
-* Reporte bugs e solicite recursos em [Issues](https://github.com/meu-usuario/meu-projeto/issues)
-* Contribua com código em [Pull Requests](https://github.com/meu-usuario/meu-projeto/pulls)
 
-## Licença
 
-Este projeto é licenciado sob a licença MIT.
 
 ## Contato
 
-* Autor: [Meu Nome](mailto:meu-email@example.com)
-* Mantenedor: [Meu Nome](mailto:meu-email@example.com)
+* Autor: [Filipe Amaro Cinque Santana](mailto:filipe.cinque@gmail.com)
