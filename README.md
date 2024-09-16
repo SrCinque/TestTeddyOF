@@ -37,6 +37,7 @@ Um projeto feito para um teste técnico para a empresa BOLD. Ne construi uma API
 
 ## <a name="encurtar"></a>ENCURTAR: /encurtar
 * Esse END-POINT é responsável por encurtar uma URL
+* use o método _**POST**_
 * No BODY envie um JSON:
     + JSON:{
         "linkOrign":"URL  que será encurtada",
@@ -49,6 +50,7 @@ Um projeto feito para um teste técnico para a empresa BOLD. Ne construi uma API
 
 ## <a name="login"></a>LOGIN: /login
 * Esse END-POINT é responsável por realizar o login.
+* use o método _**POST**_
 * No BODY envie um JSON:
     + JSON:{
         "email":"email de acesso",
@@ -61,6 +63,7 @@ Um projeto feito para um teste técnico para a empresa BOLD. Ne construi uma API
 
 ## <a name="signin"></a>CADASTRO/SIGNIN: /signin
 * Esse END-POINT é responsável por realizar a criação de um usuário.
+* use o método _**POST**_
 * No BODY envie um JSON:
     + JSON:{
         "name":"nome do usuário",
@@ -74,6 +77,7 @@ Um projeto feito para um teste técnico para a empresa BOLD. Ne construi uma API
 
 ## <a name="upload"></a>MUDANÇA EM UMA URL JÁ EXISTENTE/UPLOAD: /upload
 * Esse END-POINT é responsável por realizar a mudança em uma URL que já foi encurtada.
+* use o método _**PATH**_
 * No BODY envie um JSON:
     + JSON:{
         "token":"token de acesso",
@@ -89,6 +93,7 @@ Um projeto feito para um teste técnico para a empresa BOLD. Ne construi uma API
 
 ## <a name="list"></a>LISTAGEM: /list
 * Esse END-POINT é responsável por listar todas as URL's que um usuário encurtou.
+* use o método _**GET**_
 * No BODY envie um JSON:
      + JSON:{
         "token":"token de acesso"
@@ -102,6 +107,7 @@ Um projeto feito para um teste técnico para a empresa BOLD. Ne construi uma API
 
 ## <a name="delete"></a>DELETAR: /delete
 * Esse END-POINT é responsável por deletar uma URL que já foi encurtada.
+* use o método _**DELETE**_
  +JSON:{
         "token":"token de acesso",
         "urlId":"ID da URL que será deletada"
