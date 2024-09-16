@@ -108,7 +108,8 @@ Um projeto feito para um teste técnico para a empresa BOLD. Ne construi uma API
 ## <a name="delete"></a>DELETAR: /delete
 * Esse END-POINT é responsável por deletar uma URL que já foi encurtada.
 * use o método _**DELETE**_
- +JSON:{
+* No BODY envie um JSON:
+ + JSON:{
         "token":"token de acesso",
         "urlId":"ID da URL que será deletada"
         
