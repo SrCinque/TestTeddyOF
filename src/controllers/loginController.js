@@ -6,7 +6,6 @@ config();
 
 class loginControler{
 
-    //MUDAR CÓDIGO PARA REALIZAR O LOGIN
 
     async  run(req,res) {
 

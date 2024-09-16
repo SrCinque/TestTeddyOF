@@ -7,8 +7,7 @@ import { config } from 'dotenv';
 config();
 class encurtarController{
 
-    //ADICIONAR VERIFICAÇÃO SE O LINK JÁ EXISTE BASEADO NO ID DO USUÁRIO
-    //Adicionar verificação se existe o link do Usuário
+ 
 
     async run(req,res){
 

@@ -1,7 +1,6 @@
 import { prismaClient } from "../database/prisma-client.js";
 import { controlAccessService } from "./controlAccessService.js";
 
-    //MUDAR CÓDIGO PARA REALIZAR O LOGIN e RETORNAR O JWT
 
 
 class loginService{

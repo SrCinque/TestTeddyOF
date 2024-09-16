@@ -2,7 +2,7 @@ import { deletService } from "../services/deletService.js";
 
 
 class deletController{
-    //Verificar TOKEN de sessão do usuário
+
 
     async run(req,res){
         const {urlId} =  req.body

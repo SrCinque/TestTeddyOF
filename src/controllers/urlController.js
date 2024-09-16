@@ -14,7 +14,7 @@ class urlController{
         }else{
 
             
-            res.redirect(urlRedirect);  //--LEMBRAR DE RETIRAR O COMENTÁRIO E CONFIGURAR PARA REDIRECIONAR
+            res.redirect(urlRedirect);  
         }
     }
 }

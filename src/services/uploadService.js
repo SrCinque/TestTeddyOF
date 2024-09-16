@@ -1,4 +1,3 @@
-import { response } from "express";
 import { prismaClient } from "../database/prisma-client.js";
 
 
