@@ -31,8 +31,8 @@ class encurtarController{
         } )
 
             const encuratarExecute =  await encurtarServ.encurtar(linkOrign, req.userID[0])
-                    
-            res.send({url: encuratarExecute})
+            const base = process.env.URL;
+            res.send({url: base+encuratarExecute})
         }
 
         

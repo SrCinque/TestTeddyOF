@@ -50,9 +50,10 @@ class encurtarService{
                     
                 }
             })
+            
+            const urlEncurtada = linkToDb.map(item => item.url)[0]
     
-    
-            return linkToDb;
+            return urlEncurtada;
             
     
         }
