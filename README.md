@@ -16,11 +16,12 @@ Um projeto feito para um teste técnico para a empresa BOLD. Ne construi uma API
 
 ## Uso
 * Inicie a API com o comando: `npm run dev`
-* Acesse o aplicativo em `http://localhost:3000`
-* Use o comando `docker-compose exec app prisma migrate` para executar migrações de banco de dados
+* Acesse a API com algum API CLIENT(Insominia, PostMen. etc..) e uso a url base: _http://localhost:{numero-da-porta}/_
+* A API tem os seguintes END-POINTS:
+    + [LIST](#list)
 
 
-
+** <a name="list"></a>LIST
 
 ## Contato
 
