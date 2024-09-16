@@ -111,8 +111,7 @@ Um projeto feito para um teste técnico para a empresa BOLD. Ne construi uma API
 * No BODY envie um JSON:
  + JSON:{
         "token":"token de acesso",
-        "urlId":"ID da URL que será deletada"
-        
+        "urlId":"ID da URL que será deletada" 
     }
 
 * Devolve:
