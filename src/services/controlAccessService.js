@@ -1,5 +1,5 @@
 import pkg from 'jsonwebtoken';
-const { sign, verify } = pkg;
+const { sign } = pkg;
 import { config } from 'dotenv';
 
 config()

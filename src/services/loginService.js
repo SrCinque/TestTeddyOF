@@ -29,19 +29,6 @@ class loginService{
     }
 
 
-    /*
-    async criaLogin(name,email,senha){
-        const user = await prismaClient.user.create({
-            data:{
-                name: name,
-                email: email,
-                password: senha
-            }
-            
-        })
-
-        return user
-    }*/
 
 }
 

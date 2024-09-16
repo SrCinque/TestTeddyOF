@@ -63,9 +63,7 @@ app.post('/login', (req,res)=>{
 app.get('/list',verifyAccess, (req,res)=>{
     
     return new listController().run(req,res)
-    /*res.json({
-        "statusCode": "404"
-    })*/
+   
 
 })
 
@@ -76,13 +74,14 @@ app.get('/:code', (req,res)=>{
 })
 
 app.get('/', function(req,res){
-    res.send('Teste se server')
-    const url = process.env.URL
-    console.log(url)
+    res.status(200).send({success: "Use algum END-POINT"})
+    
 })
 
 
 app.delete('/delete', verifyAccess, (req,res)=>{
     return new deletController().run(req,res)
 })
+
+
 app.listen(3000, ()=>console.log('API rodando'))
