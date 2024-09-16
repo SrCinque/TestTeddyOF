@@ -12,7 +12,7 @@ Um projeto feito para um teste técnico para a empresa BOLD. Ne construi uma API
 ## Configuração
 
 * **CASO QUEIRA RODAR A APLICAÇÃO EM UMA PORTA DIFERENTE DA 3000:** Edite a variável URL no arquivo .env.
-*_exemplo: URL="http://localhost:<numero-da-porta>/"_
+*_exemplo: URL="http://localhost:{numero-da-porta}/"_
 
 ## Uso
 * Inicie a API com o comando: `npm run dev`
