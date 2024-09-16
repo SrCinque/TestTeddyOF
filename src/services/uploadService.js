@@ -7,9 +7,16 @@ class uploadService{
     
     async upload(urlId, urlTo, userID){
 
-           
-            //ADICIONAR VERIFICAÇÃO SE A URL EXISTE ANTES DE EXECUTAR O UPDATE
-            try {
+
+
+            const checkUrl =  await prismaClient.link.findMany({
+              where:{
+                  id:urlId
+              }
+            })
+
+            if(checkUrl.length > 0){
+              try {
                 const linkUpdate = await prismaClient.link.update({
                   where: {
                     id: urlId,
@@ -24,6 +31,12 @@ class uploadService{
                 console.error(error);
                 return { error: 'Erro ao atualizar link' }; // ou qualquer outra resposta de erro que você queira
               }
+              
+            }else{
+              return "NOT_FOUND"
+            }
+
+           
         
     }
 }

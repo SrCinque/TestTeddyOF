@@ -11,7 +11,12 @@ class signinController{
         }else{
             const signinServ = new signinService();
             const signinExecute = await signinServ.signin(name,email,senha)
-            res.send(signinExecute)
+
+            if(signinExecute == "USER_EXIST"){
+                res.status(401).send({error_code:"USER_EXIST", error_description:"O usuário já existe!"})
+            }
+
+            res.status(200).send(signinExecute)
         }
     }
 

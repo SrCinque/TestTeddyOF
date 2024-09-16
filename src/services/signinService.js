@@ -5,16 +5,32 @@ class signinService{
     //ADICIONAR O .then().cath() para capiturar sucesso ou erro
 
     async signin(name,email,senha){
-        const user = await prismaClient.user.create({
-            data:{
-                name: name,
-                email: email,
-                password: senha
+        const checkSignin =  await prismaClient.user.findMany({
+            where:{
+                email:email
             }
-            
         })
 
-        return user
+        if(checkSignin.length > 0){
+
+            return "USER_EXIST"
+
+        }else{
+
+            const user = await prismaClient.user.create({
+                data:{
+                    name: name,
+                    email: email,
+                    password: senha
+                }
+                
+            })
+    
+            return user
+
+        }
+
+       
     }
 }
 

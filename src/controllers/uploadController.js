@@ -7,7 +7,13 @@ class uploadController{
         const  userId  = req.userID[0]
         const uploadExecute = new uploadService();
         const upload1 = await uploadExecute.upload(urlId,urlTo, userId);
-        res.send(upload1) 
+
+        if(upload1 == "NOT_FOUND"){
+            res.status(404).send({err_code:"NOT_FOUND",error_desc:"URL não encontrada"})
+        }else{
+            res.status(200).send({success:"Mudança realizada com sucesso"})
+        }
+       
     }
 }
 
