@@ -127,4 +127,4 @@ Um projeto feito para um teste técnico para a empresa BOLD. Ne construi uma API
 
 ## IMPORTANTE:
 
-* **A Aplicação não foi DOCKENIZADA devido a um problema com virtualização na minha máquina, para não impactar o tempo de entrega do teste, opitei por não dockenizar. A aplicação será dockenizada após a entrega do teste!**
+* **A Aplicação não foi DOCKENIZADA devido a um problema com virtualização na minha máquina, para não impactar o tempo de entrega do teste, optei por não dockenizar. A aplicação será dockenizada após a entrega do teste!**
