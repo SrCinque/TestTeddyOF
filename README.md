@@ -5,7 +5,7 @@ Um projeto feito para um teste técnico para a empresa BOLD. Ne construi uma API
 ## Instalação
 
 1. Clone o repositório: `https://github.com/SrCinque/TestTeddyOF`
-2. Navegue até o diretório do projeto: `cd meu-projeto`
+2. Navegue até o diretório do projeto
 3. Execute o comando: `node install` e `npx prisma migrate dev --name init`
 
 
